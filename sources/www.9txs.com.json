@@ -2,7 +2,7 @@
     "name": "九桃小说",
     "url": "https://www.9txs.com",
     "category": 3,
-    "version": 101,
+    "version": 102,
     "search": {
         "url": "https://www.9txs.com/search.html@post->searchkey=${key}",
         "list": "ul.library > li",
@@ -22,7 +22,7 @@
         "catalog": "a.more"
     },
     "catalog": {
-        "list": "div.read > dl:gt(1)",
+        "list": "div.read > dl:gt(0)",
         "booklet": {
             "name": "b",
             "list": "dd"
