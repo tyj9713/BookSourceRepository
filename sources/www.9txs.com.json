@@ -1,10 +1,10 @@
 {
     "name": "九桃小说",
-    "url": "https://m.9txs.com",
+    "url": "https://www.9txs.com",
     "category": 3,
     "version": 100,
     "search": {
-        "url": "https://m.9txs.com/search.html@post->searchkey=${key}",
+        "url": "https://www.9txs.com/search.html@post->searchkey=${key}",
         "list": "ul.library > li",
         "name": "a.bookname",
         "author": "a.author",
