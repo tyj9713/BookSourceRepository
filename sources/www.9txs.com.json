@@ -22,7 +22,7 @@
         "catalog": "a.more"
     },
     "catalog": {
-        "list": "div.read > dl",
+        "list": "div.read > dl:gt(1)",
         "booklet": {
             "name": "b",
             "list": "dd"
