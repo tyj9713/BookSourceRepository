@@ -1,12 +1,13 @@
 {
     "name": "无锡图书馆",
     "url": "http://dlib.wxlib.cn",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "http://es.bookan.com.cn/api/searchByType?keyword=${key}&instanceId=23678&pageNum=1&limit=20&searchType=1&resourceType=3",
         "list": "$.data[*]",
         "name": "$.resourceName",
         "author": "$.issueInfo.owner",
+        "summary": "$.issueInfo.text",
         "cover": "http://img1-qn.bookan.com.cn/epub1/${$.resourceId}/${$.resourceId}-${$.issueId}/cover_small.jpg",
         "detail": "http://user.bookan.com.cn/index.php?op=Resource.getHash&resourceType=3&resourceId=${$.resourceId}&issueId=${$.issueId}&start=0&end=0"
     },
@@ -14,7 +15,7 @@
         "catalog": "http://epub.bookan.com.cn/epub1/${$params.resourceId}/${$params.resourceId}-${$params.issueId}/${$params.issueId}_${$.data[0].hash}/OEBPS/toc.ncx"
     },
     "catalog": {
-        "list": "navPoint",
+        "list": "navPoint:gt(0)",
         "name": "text",
         "chapter": "content@attr->src"
     },
