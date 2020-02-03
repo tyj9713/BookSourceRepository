@@ -1,7 +1,7 @@
 {
     "name": "无锡图书馆",
     "url": "http://dlib.wxlib.cn",
-    "version": 101,
+    "version": 102,
     "search": {
         "url": "http://es.bookan.com.cn/api/searchByType?keyword=${key}&instanceId=23678&pageNum=1&limit=20&searchType=1&resourceType=3",
         "list": "$.data[*]",
@@ -20,6 +20,6 @@
         "chapter": "content@attr->src"
     },
     "chapter": {
-        "content":"body"
+        "content":"body > p"
     }
 }
