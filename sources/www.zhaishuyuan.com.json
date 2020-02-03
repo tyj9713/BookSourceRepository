@@ -1,8 +1,7 @@
 {
     "name": "斋书苑",
     "url": "https://www.zhaishuyuan.com",
-    "category": 1,
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "https://www.zhaishuyuan.com/search/@post->s=${key}",
         "charset": "gb2312",
