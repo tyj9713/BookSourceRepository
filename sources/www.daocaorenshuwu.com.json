@@ -1,7 +1,7 @@
 {
     "name": "稻草人书屋",
     "url": "www.daocaorenshuwu.com",
-    "version": 102,
+    "version": 100,
     "search": {
         "url": "https://www.daocaorenshuwu.com/plus/search.php?q=${key}",
         "list": "tbody > tr",
