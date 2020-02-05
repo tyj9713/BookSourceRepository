@@ -3,7 +3,7 @@
     "url": "www.ahlib.com",
     "version": 100,
     "search": {
-        "url": "https://es.bookan.com.cn/api/searchByType?instanceId=3&keyword=${key}&resourceType=1&searchType=1&pageNum=1&limit=20",
+        "url": "https://es.bookan.com.cn/api/searchByType?instanceId=3&keyword=${key}&resourceType=1&searchType=1&pageNum=1&limit=30",
         "list": "$.data[?(@.format==1)]",
         "name": "$.resourceName",
         "author": "$.issueInfo.press",
