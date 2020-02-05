@@ -8,7 +8,7 @@
         "name": "$.resourceName",
         "author": "$.issueInfo.press",
         "summary": "$.issueInfo.text",
-        "cover": "http://img1-qn.bookan.com.cn/page6/${$.resourceId}/${$.resourceId}-${$.issueId}/cover_small.mg",
+        "cover": "http://img1-qn.bookan.com.cn/page${$.issueInfo.jpg}/${$.resourceId}/${$.resourceId}-${$.issueId}/cover_small.mg",
         "detail": "http://user.bookan.com.cn/index.php?op=Resource.getHash&resourceType=1&resourceId=${$.resourceId}&issueId=${$.issueId}&start=0&end=0"
     },
     "detail": {
