@@ -1,7 +1,7 @@
 {
     "name": "纵横中文网",
     "url": "m.zongheng.com",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "https://m.zongheng.com/h5/ajax/search?h5=1&keywords=${key}&pageNum=1&field=all&pageCount=10",
         "list": "$.searchlist.searchBooks[*]",
@@ -28,7 +28,7 @@
         "login": "https://passport.zongheng.com/waplogin.do",
         "cookie": "zongheng.com",
         "verify": "https://m.zongheng.com/h5/home",
-        "logged": "#sp_nickname > a:nth-child(2)@equal->退出",
+        "logged": ".user-modbox > a:first-child@equal->自动订阅管理",
         "vip": "$.result.message@equal->未订阅"
     }
 }
